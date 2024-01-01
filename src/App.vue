@@ -8,13 +8,20 @@
     <router-link to="/Profile/Ahmad" class="nav-item">Ahmad's Profile</router-link><br /> -->
   </nav>
   
+  
+  
   <router-view></router-view><br />
   <!-- <img alt="Vue logo" src="./assets/ehsan8.jpeg" /> -->
 </template>
 
 <script>
+import SidebarComponent from "./components/SidebarComponent.vue";
 export default {
+  
   name: "App",
+  component: {
+    SidebarComponent,
+  },
 };
 </script>
 
@@ -39,4 +46,6 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 } */
+
+
 </style>

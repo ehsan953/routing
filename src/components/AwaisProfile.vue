@@ -1,9 +1,18 @@
 <template>
   <router-view></router-view>
-  <h1 class="profile-h1">Awais Somroo</h1>
-  <div>
-    <img class="profile-img" src="../assets/ehsan8.jpeg" alt="" />
-    <h3>Mern Stack Developer</h3>
+  <div class="main">
+    <div class="column1">
+      <sidebarComponent />
+    </div>
+    <div class="column2">
+      <div class="content">
+        <h1 class="profile-h1">Awais Somroo</h1>
+        <div>
+          <img class="profile-img" src="../assets/ehsan8.jpeg" alt="" />
+          <h3>Mern Stack Developer</h3>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -34,7 +43,7 @@ export default {
   height: 20rem;
   border-radius: 10%;
 }
-h3{
-margin:0;
+h3 {
+  margin: 0;
 }
 </style>

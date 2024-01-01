@@ -5,6 +5,7 @@ import LoginLogin from "./components/LoginLogin.vue";
 import EhsanProfile from "./components/EhsanProfile.vue";
 import AwaisProfile from "./components/AwaisProfile.vue";
 import AhmadProfile from "./components/AhmadProfile.vue";
+// import SidebarComponent from "./components/SidebarComponent.vue";
 
 const routes = [
   {
