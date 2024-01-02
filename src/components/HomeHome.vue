@@ -6,13 +6,13 @@
       <div class="sidebar">
         <div class="sidebar-title">Sidebar</div>
         <div class="menu">
-          <router-link to="/" active-class="active" >
+          <router-link to="/" active-class="active">
             <div class="link-container">Signup</div>
           </router-link>
-          <router-link to="/" active-class="active" >
+          <router-link to="/" active-class="active">
             <div class="link-container">Login</div>
           </router-link>
-          <router-link to="/" active-class="active" >
+          <router-link to="/" active-class="active">
             <div class="link-container">Logout</div>
           </router-link>
         </div>
@@ -27,6 +27,14 @@
           inventore! Eum velit officiis sunt nesciunt provident iste magni
           mollitia!
         </p>
+        <ul>
+          <li v-for="item in technology" :key="item">{{ item }}</li>
+        </ul>
+        <ul>
+          <li v-for="item in users" :key="item.name">
+            {{ item.name }} : {{ item.email }}
+          </li>
+        </ul>
       </div>
     </div>
   </div>
@@ -40,10 +48,29 @@ export default {
   component: {
     SidebarComponent,
   },
+  data() {
+    return {
+      technology: ["java", "PHP", "Node", "HTML", "CSS"],
+      users: [
+        {
+          name: "Ehsan",
+          email: "ehsan@gmail.com",
+        },
+        {
+          name: "Awais",
+          email: "awais@gmail.com",
+        },
+        {
+          name: "Ahmad",
+          email: "ahmad@gmail.com",
+        },
+      ],
+    };
+  },
 };
 </script>
 
-<style >
+<style>
 .h1 {
   color: black;
 }
@@ -73,5 +100,8 @@ export default {
   margin: auto;
   width: 50%;
   text-align: center;
+}
+li {
+  text-align: left;
 }
 </style>

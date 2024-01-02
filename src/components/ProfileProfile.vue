@@ -25,11 +25,22 @@
 // import useRoute for dynamic routing
 // import {useRoute} from 'vue-router';
 import SidebarComponent from "./SidebarComponent.vue";
+// import EhsanProfile from "./EhsanProfile.vue";
+// import AwaisProfile from "./AwaisProfile.vue";
+// import AhmadProfile from "./AhmadProfile.vue";
 export default {
   name: "ProfileProfile",
   component: {
     SidebarComponent,
+    // EhsanProfile,
+    // AwaisProfile,
+    // AhmadProfile
   },
+  // data(){
+  //   return{
+  //     profileComponents: [EhsanProfile, AwaisProfile, AhmadProfileThree]
+  //   }
+  // }
   // data(){
   //   return{
   //     profile: ""

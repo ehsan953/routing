@@ -39,8 +39,8 @@ export default {
   color: orange;
 }
 .profile-img {
-  width: 20rem;
-  height: 20rem;
+  width: 10rem;
+  height: 10rem;
   border-radius: 10%;
 }
 h3 {
